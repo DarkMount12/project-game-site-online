@@ -13,6 +13,22 @@ body{
     width: 416px;
     justify-content: center;
 }
+.logo{
+    animation: rotation 8s infinite linear;
+}
+
+.logo:hover{
+    animation-play-state: paused;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 @media(max-width:991px) {
     .menu-bg{
@@ -114,6 +130,10 @@ body{
     background-color: #fcb8ff;
 }
 
+.footer-link:nth-child(2){
+    margin: 0 24px; 
+}
+
 @media (max-width: 420px) {
     .first-card-row{
         flex-direction: column;
@@ -128,4 +148,10 @@ body{
     .hero-title{
         font-size: 38px;
     }
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-link:nth-child(2){
+    margin: 0; 
+}
 }
